@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Nota1 :
+        <input type="text" name="" id="nota1">
+        <br/>
+        Nota2 :
+        <input type="text" name="" id="nota2">
+        <input type="submit" onclick="media(); return false;" value="calcular">
+    </form>
+    <script>
+        function media() {
+            var media = 0;
+            var n1 = document.getElementById("nota1").value;
+            var n2 = document.getElementById("nota2").value;
+            media = (parseFloat(n1)+parseFloat(n2))/2;
+            parseFloat(media);
+            if (media == 10) {
+              alert("Aprovado com distinção");  
+            }elfe{
+                alert("Aprovado");
+            }
+        }
+    </script>
+</body>
+</html>
